@@ -35,10 +35,11 @@ spec:
                 port: {{ .port }}
                 targetPort: {{ .targetPort }}
             {{- end }}
+            externalTrafficPolicy: {{ .Values.istioOperator.service.externalTrafficPolicy }}
           {{- with .Values.istioOperator.serviceAnnotations }}
           serviceAnnotations: {{ toYaml . | nindent 12 }}
           {{- end }}
-            externalTrafficPolicy: {{ .Values.istioOperator.service.externalTrafficPolicy }}
+
     egressGateways:
       - name: istio-egressgateway
         namespace: istio-system
