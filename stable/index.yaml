@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  demo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-12-30T14:15:23.119657+09:00"
+    description: A Helm chart for Kubernetes
+    digest: 4452e22265bf06eab1b9bbaceb134eb534ff18bf1c8c4aceba15ca40eb754248
+    name: demo
+    type: application
+    urls:
+    - https://hyunsu-playground.github.io/kubernetes-resource/stable/demo-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-12-30T14:15:23.11883+09:00"
