@@ -1,14 +1,16 @@
 apiVersion: v1
 entries:
-  demo:
+  argocd:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2023-12-30T14:15:23.119657+09:00"
-    description: A Helm chart for Kubernetes
-    digest: 4452e22265bf06eab1b9bbaceb134eb534ff18bf1c8c4aceba15ca40eb754248
-    name: demo
-    type: application
+    appVersion: v2.3.4
+    created: "2023-12-30T14:37:15.631656+09:00"
+    dependencies:
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 5.41.2
+    digest: 9768a91fcea8d3c39fb6adc8a18fb1341c098efda7a83d715a55bfec1ddfbc53
+    name: argocd
     urls:
-    - https://hyunsu-playground.github.io/kubernetes-resource/stable/demo-0.1.0.tgz
-    version: 0.1.0
-generated: "2023-12-30T14:15:23.11883+09:00"
+    - argocd-4.8.11.tgz
+    version: 4.8.11
+generated: "2023-12-30T14:37:15.621254+09:00"
