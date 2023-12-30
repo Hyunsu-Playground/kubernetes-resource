@@ -38,7 +38,7 @@ spec:
           {{- with .Values.istioOperator.serviceAnnotations }}
           serviceAnnotations: {{ toYaml . | nindent 12 }}
           {{- end }}
-          externalTrafficPolicy: {{ .Values.istioOperator.service.externalTrafficPolicy }}
+            externalTrafficPolicy: {{ .Values.istioOperator.service.externalTrafficPolicy }}
     egressGateways:
       - name: istio-egressgateway
         namespace: istio-system
