@@ -16,7 +16,7 @@ projects:
         namespace: argocd
         source:
           path: apps/istio-resource
-          repoURL: https://github.com/team-xquare/k8s-resource.git
+          repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
         syncPolicy:
           automated:
             prune: false
