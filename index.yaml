@@ -3,7 +3,7 @@ entries:
   argocd:
   - apiVersion: v2
     appVersion: v2.3.4
-    created: "2023-12-30T18:44:10.240162+09:00"
+    created: "2023-12-30T18:59:20.126687+09:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -16,7 +16,17 @@ entries:
   istio:
   - apiVersion: v2
     appVersion: 1.18.1
-    created: "2023-12-30T18:44:10.241361+09:00"
+    created: "2023-12-30T18:59:20.128464+09:00"
+    description: Istio setting
+    digest: 233fdad9d2043af3a80e433030dc644abb11f5fc27b7e48c1e30c0ab27735ceb
+    name: istio
+    type: application
+    urls:
+    - istio-1.0.43.tgz
+    version: 1.0.43
+  - apiVersion: v2
+    appVersion: 1.18.1
+    created: "2023-12-30T18:59:20.127558+09:00"
     description: Istio setting
     digest: 045b16aa94bbbe857b7769cfe77a35a164154d7cf7bd292b2f0eb82ead27e177
     name: istio
@@ -24,4 +34,4 @@ entries:
     urls:
     - istio-1.0.42.tgz
     version: 1.0.42
-generated: "2023-12-30T18:44:10.230054+09:00"
+generated: "2023-12-30T18:59:20.115831+09:00"
