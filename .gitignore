@@ -118,5 +118,4 @@ fabric.properties
 
 **/Chart.lock
 **/requirements.lock
-**/charts/**
 **/*.tgz
