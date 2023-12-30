@@ -3,7 +3,7 @@ entries:
   argocd:
   - apiVersion: v2
     appVersion: v2.3.4
-    created: "2023-12-30T20:32:24.272732+09:00"
+    created: "2023-12-30T20:41:19.127248+09:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -16,18 +16,18 @@ entries:
   hyunsu-application:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-12-30T20:32:24.272893+09:00"
+    created: "2023-12-30T20:41:19.127398+09:00"
     description: Hyunsu application
-    digest: 539c26d956275b403868942c7ae3756335a033bf91575cace0dedd458a4159cc
+    digest: 4477a041d0964cdc9e8ad22987680c607bdf6c5ad2c84747fea5c86392b99672
     name: hyunsu-application
     type: application
     urls:
-    - hyunsu-application-1.0.0.tgz
-    version: 1.0.0
+    - hyunsu-application-1.0.1.tgz
+    version: 1.0.1
   istio:
   - apiVersion: v2
     appVersion: 1.18.1
-    created: "2023-12-30T20:32:24.273773+09:00"
+    created: "2023-12-30T20:41:19.128255+09:00"
     description: Istio setting
     digest: a2ead3f38a1efdfb07fa6781c70d4d93c715da11c0cf19271873badb055cca90
     name: istio
@@ -35,4 +35,4 @@ entries:
     urls:
     - istio-1.0.44.tgz
     version: 1.0.44
-generated: "2023-12-30T20:32:24.26429+09:00"
+generated: "2023-12-30T20:41:19.11832+09:00"
