@@ -9,7 +9,8 @@ ingressGateway:
 
 virtualServices:
   - name: argocd-server
-    host: '*'
+    host:
+      - '*'
     destination:
       host: argocd-server.argocd.svc.cluster.local
       port: 80
