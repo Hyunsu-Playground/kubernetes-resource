@@ -9,7 +9,7 @@ ingressGateway:
 
 virtualServices:
   - name: argocd-server
-    host: argo-cd.a4ecb79627d8d4c379270e6f229c3c9b-3aceabdb5cda0757.elb.ap-northeast-2.amazonaws.com
+    host: '*'
     destination:
       host: argocd-server.argocd.svc.cluster.local
       port: 80
