@@ -9,8 +9,7 @@ ingressGateway:
 
 virtualServices:
   - name: argocd-server
-    host:
-      - '*'
+    host: argo-cd.hyunsu.site
     destination:
       host: argocd-server.argocd.svc.cluster.local
       port: 80
