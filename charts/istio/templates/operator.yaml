@@ -5,6 +5,8 @@ metadata:
   namespace: istio-system
 spec:
   profile: {{ .Values.istioOperator.profile }}
+  meshConfig:
+    accessLogFile: /dev/stdout
   components:
     pilot:
       k8s:
@@ -21,12 +23,6 @@ spec:
           hpaSpec:
             minReplicas: {{ .Values.istioOperator.hpaSpec.minReplicas }}
             maxReplicas: {{ .Values.istioOperator.hpaSpec.maxReplicas }}
-          {{- with .Values.nodeSelector }}
-          nodeSelector: {{ toYaml . | nindent 12 }}
-          {{- end }}
-          {{- with .Values.tolerations }}
-          tolerations: {{ toYaml . | nindent 12 }}
-          {{- end }}
           service:
             type: LoadBalancer
             ports:
@@ -47,7 +43,7 @@ spec:
         label:
           service.istio.io/canonical-name: istio-egressgateway
         k8s:
-          hpaSpec:  
+          hpaSpec:
             minReplicas: {{ .Values.istioOperator.hpaSpec.minReplicas }}
             maxReplicas: {{ .Values.istioOperator.hpaSpec.maxReplicas }}
           {{- with .Values.istioOperator.serviceAnnotations }}
@@ -59,3 +55,4 @@ spec:
     gateways:
       istio-ingressgateway:
         type: ClusterIP
+    global:
