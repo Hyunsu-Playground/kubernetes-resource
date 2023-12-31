@@ -21,7 +21,4 @@ spec:
         name: {{ .port.name }}
         number: {{ .port.number }}
         protocol: {{ .port.protocol }}
-      tls:
-        mode: {{ .tls.mode }}
-        credentialName: {{ .tls.credentialName }}
     {{- end }}
