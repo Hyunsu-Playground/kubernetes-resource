@@ -21,7 +21,7 @@ projects:
           automated:
             prune: false
             selfHeal: true
-      - name: hyunsu-cretificate
+      - name: hyunsu-certificate
         namespace: argocd
         source:
           path: apps/hyunsu-certificate
