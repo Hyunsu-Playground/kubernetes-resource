@@ -24,7 +24,7 @@ projects:
       - name: hyunsu-cretificate
         namespace: argocd
         source:
-          path: apps/hyunsu-cretificate
+          path: apps/hyunsu-certificate
           repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
         syncPolicy:
           automated:
