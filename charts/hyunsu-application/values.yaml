@@ -22,7 +22,7 @@ projects:
             prune: false
             selfHeal: true
       - name: hyunsu-cretificate
-        namespace: hyunsu-cretificate
+        namespace: argocd
         source:
           path: apps/hyunsu-cretificate
           repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
