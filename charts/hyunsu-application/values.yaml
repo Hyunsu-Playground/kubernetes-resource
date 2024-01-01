@@ -21,3 +21,12 @@ projects:
           automated:
             prune: false
             selfHeal: true
+      - name: hyunsu-cretificate
+        namespace: hyunsu-cretificate
+        source:
+          path: apps/hyunsu-cretificate
+          repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
+        syncPolicy:
+          automated:
+            prune: false
+            selfHeal: true

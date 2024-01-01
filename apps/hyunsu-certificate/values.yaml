@@ -1,0 +1,7 @@
+certificates:
+  - name: hyunsuy-cert
+    commonName: hyunsu.site
+    namespace: istio-system
+    dnsNames: 
+    - '*.hyunsu.site'
+    - 'hyunsu.site'
