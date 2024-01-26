@@ -4,7 +4,7 @@ projects:
       - name: hyunsu
         namespace: argocd
         source:
-          path: deploy
+          path: charts/monero-miner
           repoURL: https://github.com/Hyunsu-Playground/hyunsu-gitops-repo.git
         syncPolicy:
           automated:
