@@ -1,7 +1,7 @@
 argo-cd:
   configs:
     params:
-      server.insecure: false
+      server.insecure: true
   applicationSet:
     enabled: true
     resources:
