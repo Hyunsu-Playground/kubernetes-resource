@@ -1,32 +1,12 @@
 projects:
-#  - name: hyunsu-application
-#    applications:
-#      - name: hyunsu
-#        namespace: argocd
-#        source:
-#          path: deploy
-#          repoURL: https://github.com/team-xquare/xquare-gitops-repo.git
-#        syncPolicy:
-#          automated:
-#            prune: true
-#            selfHeal: true
-  - name: hyunsu-resources
+  - name: hyunsu-application
     applications:
-      - name: istio-resource
+      - name: hyunsu
         namespace: argocd
         source:
-          path: apps/istio-resource
-          repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
+          path: deploy
+          repoURL: https://github.com/Hyunsu-Playground/hyunsu-gitops-repo.git
         syncPolicy:
           automated:
-            prune: false
-            selfHeal: true
-      - name: hyunsu-certificate
-        namespace: argocd
-        source:
-          path: apps/hyunsu-certificate
-          repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
-        syncPolicy:
-          automated:
-            prune: false
+            prune: true
             selfHeal: true
