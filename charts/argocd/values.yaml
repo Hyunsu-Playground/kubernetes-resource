@@ -1,0 +1,12 @@
+argo-cd:
+  configs:
+    params:
+      server.insecure: true
+  applicationSet:
+    enabled: true
+    resources:
+      requests:
+        cpu: 1m
+        memory: 32Mi
+  notifications:
+    enabled: false
