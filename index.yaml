@@ -3,7 +3,7 @@ entries:
   argocd:
   - apiVersion: v2
     appVersion: v2.3.4
-    created: "2024-01-26T17:50:40.594726+09:00"
+    created: "2024-01-27T20:27:42.667329+09:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -15,7 +15,7 @@ entries:
     version: 4.8.15
   - apiVersion: v2
     appVersion: v2.3.4
-    created: "2024-01-26T17:50:40.586693+09:00"
+    created: "2024-01-27T20:27:42.659478+09:00"
     dependencies:
     - name: argo-cd
       repository: https://argoproj.github.io/argo-helm
@@ -28,7 +28,7 @@ entries:
   hyunsu-application:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-26T17:50:40.595173+09:00"
+    created: "2024-01-27T20:27:42.667743+09:00"
     description: Hyunsu application
     digest: 2a5aaa2de6db4fda2a032a61af2b8e9a834e07da00addf811d388ba2e0230e65
     name: hyunsu-application
@@ -38,7 +38,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-26T17:50:40.595039+09:00"
+    created: "2024-01-27T20:27:42.667625+09:00"
     description: Hyunsu application
     digest: 1b4d3329fdfb54e4ca4f4f4832d91b0c7a89e71ae9a8e2c91e80e28da3885345
     name: hyunsu-application
@@ -48,7 +48,7 @@ entries:
     version: 1.0.6
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-01-26T17:50:40.594904+09:00"
+    created: "2024-01-27T20:27:42.6675+09:00"
     description: Hyunsu application
     digest: 1a650ca350f5d6fa02258c3423740a2d4bf9f3dac3710547f254d588c3930873
     name: hyunsu-application
@@ -59,7 +59,7 @@ entries:
   istio:
   - apiVersion: v2
     appVersion: 1.18.1
-    created: "2024-01-26T17:50:40.595989+09:00"
+    created: "2024-01-27T20:27:42.668475+09:00"
     description: Istio setting
     digest: 08f06ade0b3d87eebfb279d50e7012ef52e37f083820bc5d314496a819acb123
     name: istio
@@ -67,4 +67,17 @@ entries:
     urls:
     - istio-1.0.45.tgz
     version: 1.0.45
-generated: "2024-01-26T17:50:40.577155+09:00"
+  jenkins:
+  - apiVersion: v2
+    appVersion: v2.3.4
+    created: "2024-01-27T20:27:42.671398+09:00"
+    dependencies:
+    - name: jenkins
+      repository: https://charts.jenkins.io
+      version: 4.12.1
+    digest: 2a87a98b8412bc78731de64f5ed8178c490c3400f702f1d10475ddc5a0dab03f
+    name: jenkins
+    urls:
+    - jenkins-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-01-27T20:27:42.650426+09:00"
