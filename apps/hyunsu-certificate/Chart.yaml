@@ -1,6 +1,0 @@
-apiVersion: v2
-type: application
-name: hyunsu-certificate
-version: 1.0.0
-appVersion: "1.0.0"
-description: Hyunsu certificate for tls
