@@ -1,9 +1,9 @@
 ingressGateway:
   servers:
   - hosts:
-      - '*'
+      - '*.hyunsu.site'
     port:
-      name: https-hyunsu
+      name: http-hyunsu
       number: 80
       protocol: HTTP
 
