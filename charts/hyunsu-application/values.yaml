@@ -10,3 +10,14 @@ projects:
           automated:
             prune: true
             selfHeal: true
+  - name: xquare-resources
+    applications:
+      - name: certificate
+        namespace: argocd
+        source:
+          path: apps/certificate
+          repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
+        syncPolicy:
+          automated:
+            prune: true
+            selfHeal: true
