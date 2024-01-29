@@ -19,5 +19,5 @@ projects:
           repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
         syncPolicy:
           automated:
-            prune: true
+            prune: false
             selfHeal: true
