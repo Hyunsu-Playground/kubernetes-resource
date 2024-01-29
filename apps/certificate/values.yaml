@@ -1,5 +1,5 @@
 certificates:
-  - name: hyunsu-cert
+  - name: hyunsu-cert-5sg7d
     commonName: hyunsu.site
     namespace: istio-system
     dnsNames: 
