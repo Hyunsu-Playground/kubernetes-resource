@@ -10,7 +10,7 @@ projects:
           automated:
             prune: true
             selfHeal: true
-  - name: xquare-resources
+  - name: hyunsu-resources
     applications:
       - name: certificate
         namespace: argocd
