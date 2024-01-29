@@ -8,11 +8,11 @@ metadata:
 spec:
   isCA: true
   duration: 87600h0m0s # 10 years
-  secretName: {{ .secretName }}
   commonName: {{ .commonName }}
   privateKey:
     algorithm: ECDSA
     size: 256
+  secretName: {{ .secretName }}
   subject:
     organizations:
     - cluster.local
