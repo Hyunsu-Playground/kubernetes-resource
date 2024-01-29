@@ -16,3 +16,8 @@ virtualServices:
     destination:
       host: argocd-server.argocd.svc.cluster.local
       port: 80
+  - name: jenkins-server
+    host: jenkins.hyunsu.site
+    destination:
+      host: jenkins.jenkins.svc.cluster.local
+      port: 8080
