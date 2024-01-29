@@ -21,3 +21,12 @@ projects:
           automated:
             prune: false
             selfHeal: true
+      - name: istio-resource
+        namespace: argocd
+        source:
+          path: apps/istio-resource
+          repoURL: https://github.com/Hyunsu-Playground/kubernetes-resource.git
+        syncPolicy:
+          automated:
+            prune: false
+            selfHeal: true
