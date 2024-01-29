@@ -12,7 +12,7 @@ spec:
   privateKey:
     algorithm: ECDSA
     size: 256
-  secretName: {{ .secretName }}
+  secretName: {{ .name }}
   subject:
     organizations:
     - cluster.local
