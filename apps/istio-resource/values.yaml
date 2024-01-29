@@ -2,6 +2,7 @@ ingressGateway:
   servers:
   - hosts:
       - '*.hyunsu.site'
+      - '*.172.30.1.23'
     port:
       name: https-hyunsu
       number: 443
