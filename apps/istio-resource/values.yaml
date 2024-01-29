@@ -3,9 +3,12 @@ ingressGateway:
   - hosts:
       - '*.hyunsu.site'
     port:
-      name: http-hyunsu
-      number: 80
-      protocol: HTTP
+      name: https-hyunsu
+      number: 443
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: hyunsu-cert
 
 virtualServices:
   - name: argocd-server

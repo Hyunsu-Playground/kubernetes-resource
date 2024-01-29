@@ -1,7 +1,7 @@
 kind: Gateway
 apiVersion: networking.istio.io/v1alpha3
 metadata:
-  name: hyunsu-ingressgateway
+  name: xquare-ingressgateway
   namespace: istio-system
 spec:
   selector:
@@ -14,11 +14,14 @@ spec:
         number: 80
         protocol: HTTP
       tls:
-        httpsRedirect: false
+        httpsRedirect: true
     {{- range .Values.ingressGateway.servers }}
     - hosts: {{ .hosts | toYaml | nindent 6 }}
       port:
         name: {{ .port.name }}
         number: {{ .port.number }}
         protocol: {{ .port.protocol }}
+      tls:
+        mode: {{ .tls.mode }}
+        credentialName: {{ .tls.credentialName }}
     {{- end }}
