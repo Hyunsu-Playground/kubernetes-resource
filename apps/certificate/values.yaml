@@ -1,5 +1,6 @@
 certificates:
   - name: hyunsu-cert
+    secretName: hyunsu-cert-bwsd7
     commonName: hyunsu.site
     namespace: istio-system
     dnsNames: 

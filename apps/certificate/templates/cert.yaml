@@ -8,7 +8,7 @@ metadata:
 spec:
   isCA: true
   duration: 87600h0m0s # 10 years
-  secretName: {{ .name }}
+  secretName: {{ .secretName }}
   commonName: {{ .commonName }}
   privateKey:
     algorithm: ECDSA
